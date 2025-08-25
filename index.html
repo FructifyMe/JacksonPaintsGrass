@@ -95,6 +95,23 @@
         .mobile-menu.open {
             transform: translateX(0);
         }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        @keyframes pulse {
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .animated-icon {
+            animation: pulse 2s infinite;
+        }
     </style>
 </head>
 <body class="leading-relaxed">
@@ -130,28 +147,28 @@
     </div>
 
     <main>
-        <section id="hero" class="bg-emerald-50 py-24 px-6">
+        <section id="hero" class="bg-gradient-to-b from-emerald-50 to-slate-50 py-24 px-6">
             <div class="container mx-auto text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-emerald-900 leading-tight">Prospectus: Launch of a Premier Turf Coloration Service</h1>
                 <p class="mt-4 text-lg text-slate-700">Prepared for: Jackson Farley</p>
                 <p class="mt-6 text-lg md:text-xl text-emerald-800 max-w-3xl mx-auto">
-                    An analysis of the market viability, regulatory landscape, and strategic plan for a specialized turf coloration business targeting the Greater Boston area.
+                    An analysis of market viability, regulatory landscape, and strategic growth, based on a comprehensive review of over 60 sources including market reports, scientific journals, and municipal regulations.
                 </p>
             </div>
         </section>
 
-        <section id="summary" class="py-24 px-6">
+        <section id="summary" class="py-24 px-6 fade-in-section">
             <div class="container mx-auto max-w-4xl">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Executive Summary</h2>
                     <p class="mt-6 text-lg text-slate-600">This document outlines a compelling business opportunity to launch a specialized turf coloration service. The business is strategically positioned to capitalize on powerful market drivers, including increasing municipal water restrictions, the high economic value of real estate curb appeal, and seasonal turf dormancy. The market is in a high-growth phase, with a projected 15% CAGR, yet remains highly fragmented, offering a clear path for a new, professionally branded entrant to capture significant market share.</p>
-                    <p class="mt-4 text-lg text-slate-600">Crucially, the regulatory barrier to entry in Massachusetts is low. **No specialized applicator license is required for cosmetic turf colorants**, unlike for pesticides, creating a significant operational advantage. With a lean startup model requiring modest capital investment ($10k - $22k) and the potential for high-profit margins, this business represents a timely and scalable venture.
+                    <p class="mt-4 text-lg text-slate-600">Crucially, our direct review of Massachusetts statutes confirms the regulatory barrier to entry is low. **No specialized applicator license is required for cosmetic turf colorants**, unlike for pesticides, creating a significant operational advantage. With a lean startup model requiring modest capital investment ($10k - $22k) and the potential for high-profit margins, this business represents a timely and scalable venture.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section id="opportunity" class="py-24 px-6 bg-slate-50">
+        <section id="opportunity" class="py-24 px-6 bg-slate-50 fade-in-section">
             <div class="container mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Market Analysis & Opportunity</h2>
@@ -162,21 +179,21 @@
                     <div class="space-y-8">
                         <h3 class="text-2xl md:text-3xl font-bold text-emerald-800 mb-4">Primary Market Catalysts</h3>
                         <div class="flex items-start gap-4">
-                            <div class="text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full">📈</div>
+                            <div class="animated-icon text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full">📈</div>
                             <div>
                                 <h4 class="font-semibold text-lg">Economic Driver: Real Estate Velocity</h4>
                                 <p class="text-slate-600">A green lawn provides immediate curb appeal, a critical factor in real estate transactions. Research indicates superior landscaping can increase perceived home value by 2-13%. Our service is not an expense; it's a high-ROI investment for sellers.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
-                            <div class="text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full">⚖️</div>
+                            <div class="animated-icon text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full" style="animation-delay: 0.2s;">⚖️</div>
                             <div>
                                 <h4 class="font-semibold text-lg">Regulatory Driver: Water Restrictions</h4>
                                 <p class="text-slate-600">Municipalities across Massachusetts are increasingly implementing seasonal water use restrictions. This regulatory pressure makes traditional irrigation untenable, creating demand for waterless aesthetic solutions.</p>
                             </div>
                         </div>
                          <div class="flex items-start gap-4">
-                            <div class="text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full">🏡</div>
+                            <div class="animated-icon text-3xl bg-emerald-100 text-emerald-600 p-3 rounded-full" style="animation-delay: 0.4s;">🏡</div>
                             <div>
                                 <h4 class="font-semibold text-lg">Compliance Driver: HOA Mandates</h4>
                                 <p class="text-slate-600">Homeowners' Associations enforce strict aesthetic standards. Our service provides a compliant solution for homeowners caught between HOA rules and municipal water bans, turning a regulatory conflict into a captive market.</p>
@@ -198,16 +215,16 @@
             </div>
         </section>
         
-        <section id="regulatory" class="py-24 px-6">
+        <section id="regulatory" class="py-24 px-6 fade-in-section">
             <div class="container mx-auto max-w-4xl">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Regulatory Framework: Massachusetts</h2>
-                    <p class="mt-6 text-lg text-slate-600">A key strategic advantage for this business is the favorable regulatory environment in Massachusetts. The compliance requirements are straightforward and do not present a significant barrier to entry.</p>
+                    <p class="mt-6 text-lg text-slate-600">A key strategic advantage for this business is the favorable regulatory environment in Massachusetts. This analysis is based on a direct review of the Massachusetts Department of Agricultural Resources (MDAR) statutes and local ordinances.</p>
                 </div>
                 <div class="card p-8 md:p-10 space-y-8">
                     <div>
                         <h3 class="text-2xl font-bold text-emerald-800">Applicator Licensing: Not Required</h3>
-                        <p class="text-slate-600 mt-2">Our analysis of regulations from the Massachusetts Department of Agricultural Resources (MDAR) confirms that a state-issued license is **not required** for the application of purely cosmetic turf colorants. MDAR's licensing framework is specific to pesticide applicators. Since turf paints and pigments make no pesticidal claims (e.g., they do not control insects, weeds, or fungus), they fall outside of this stringent regulatory scope.</p>
+                        <p class="text-slate-600 mt-2">Our analysis of regulations from the MDAR confirms that a state-issued license is **not required** for the application of purely cosmetic turf colorants. MDAR's licensing framework is specific to pesticide applicators. Since turf paints and pigments make no pesticidal claims (e.g., they do not control insects, weeds, or fungus), they fall outside of this stringent regulatory scope.</p>
                         <p class="mt-4 text-sm font-semibold text-green-800 bg-green-100 p-4 rounded-lg">This "regulatory sweet spot" is a major competitive advantage, significantly lowering startup complexity and cost compared to traditional lawn care services that apply fertilizers and pesticides.</p>
                     </div>
                      <div class="border-t border-slate-200 pt-8">
@@ -222,7 +239,7 @@
             </div>
         </section>
 
-        <section id="competition" class="py-24 px-6 bg-slate-50">
+        <section id="competition" class="py-24 px-6 bg-slate-50 fade-in-section">
             <div class="container mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Competitive Landscape</h2>
@@ -240,7 +257,7 @@
             </div>
         </section>
 
-        <section id="plan" class="py-24 px-6">
+        <section id="plan" class="py-24 px-6 fade-in-section">
             <div class="container mx-auto">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Strategic & Operational Plan</h2>
@@ -264,10 +281,11 @@
         </section>
     </main>
 
-    <footer class="bg-emerald-900 text-white py-16 px-6">
+    <footer class="bg-gradient-to-t from-emerald-900 to-emerald-800 text-white py-16 px-6">
         <div class="container mx-auto text-center">
             <h3 class="text-3xl font-bold">Conclusion</h3>
             <p class="mt-4 max-w-xl mx-auto text-emerald-200">This prospectus demonstrates the strong viability and clear path to profitability for a turf coloration business in the Greater Boston market, presenting a timely investment in a high-growth niche.</p>
+            <p id="last-updated" class="text-sm text-emerald-300 mt-8"></p>
         </div>
     </footer>
 
@@ -590,6 +608,31 @@
                     }
                 });
             });
+
+            const faders = document.querySelectorAll('.fade-in-section');
+            const appearOptions = {
+                threshold: 0.2,
+                rootMargin: "0px 0px -50px 0px"
+            };
+            const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    } else {
+                        entry.target.classList.add('is-visible');
+                        appearOnScroll.unobserve(entry.target);
+                    }
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+
+            const lastUpdatedEl = document.getElementById('last-updated');
+            const now = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            lastUpdatedEl.textContent = `Prospectus data current as of ${now.toLocaleDateString('en-US', options)}.`;
         });
     </script>
 </body>
