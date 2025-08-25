@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Business Prospectus for Jackson Farley: Turf Colorant Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Calm Harmony -->
+    <!-- Application Structure Plan: This application has been restructured into an authoritative business prospectus format. It begins with an Executive Summary and flows through Market Analysis, Regulatory Framework, Competitive Landscape, and a detailed Strategic Plan. This linear, top-down structure provides a comprehensive and professional narrative. The navigation is updated to reflect these new, in-depth sections. Interactive elements are retained to allow for data exploration within this more formal framework, enhancing comprehension of key financial and market data points. -->
+    <!-- Visualization & Content Choices: 
+        - Regulatory Analysis: Report Info -> No specific applicator license required in MA for cosmetic colorants. Goal -> Clearly articulate the low regulatory barrier to entry. Viz/Method -> Formatted text with highlighted key takeaways (HTML/CSS). Interaction -> None needed; clarity is the goal. Justification -> Directly answers a critical business question with authority.
+        - Competitive Landscape: Report Info -> Fragmented market with different competitor types. Goal -> Provide a strategic analysis of the competitive environment. Viz/Method -> Tabbed content (HTML/JS) to detail each competitor category. Interaction -> User clicks tabs to reveal analysis. Justification -> Organizes complex information into digestible segments.
+        - Target Market Analysis: Report Info -> Different customer segments exist. Goal -> Detail the psychographics and needs of each segment. Viz/Method -> Added as a new tab within the Strategic Plan. Interaction -> Tab selection. Justification -> Deepens the business plan by showing a nuanced understanding of the customer base.
+        - All previous visualizations (charts, calculators) are retained as they effectively support the data-driven, authoritative tone of the revised prospectus.
+    -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* Slate-50 */
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #047857; /* Emerald-700 */
+        }
+        .active-nav {
+            color: #047857;
+            font-weight: 600;
+            border-bottom: 2px solid #047857;
+        }
+        .btn-primary {
+            background-color: #065f46; /* Emerald-800 */
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #047857; /* Emerald-700 */
+        }
+        .btn-secondary {
+            background-color: #E0E7FF; /* Indigo-100 */
+            color: #3730A3; /* Indigo-800 */
+            transition: background-color 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #C7D2FE; /* Indigo-200 */
+        }
+        .tab-btn.active {
+            background-color: #065f46;
+            color: white;
+        }
+        .tab-btn {
+            background-color: #F0F9FF; /* Sky-50 */
+            color: #0C4A6E; /* Sky-900 */
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-emerald-800">A Prospectus for Jackson Farley</div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#summary" class="nav-link pb-1">Summary</a>
+                <a href="#opportunity" class="nav-link pb-1">Market Analysis</a>
+                <a href="#regulatory" class="nav-link pb-1">Regulatory</a>
+                <a href="#competition" class="nav-link pb-1">Competition</a>
+                <a href="#plan" class="nav-link pb-1">Strategic Plan</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-emerald-50 py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-emerald-900 leading-tight">Prospectus: Launch of a Premier Turf Coloration Service</h1>
+                <p class="mt-4 text-lg text-slate-700">Prepared for: Jackson Farley</p>
+                <p class="mt-6 text-lg text-emerald-800 max-w-3xl mx-auto">
+                    An analysis of the market viability, regulatory landscape, and strategic plan for a specialized turf coloration business targeting the Greater Boston area.
+                </p>
+            </div>
+        </section>
+
+        <section id="summary" class="py-20 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Executive Summary</h2>
+                    <p class="mt-4 text-lg text-slate-600">This document outlines a compelling business opportunity to launch a specialized turf coloration service. The business is strategically positioned to capitalize on powerful market drivers, including increasing municipal water restrictions, the high economic value of real estate curb appeal, and seasonal turf dormancy. The market is in a high-growth phase, with a projected 15% CAGR, yet remains highly fragmented, offering a clear path for a new, professionally branded entrant to capture significant market share.</p>
+                    <p class="mt-4 text-lg text-slate-600">Crucially, the regulatory barrier to entry in Massachusetts is low. **No specialized applicator license is required for cosmetic turf colorants**, unlike for pesticides, creating a significant operational advantage. With a lean startup model requiring modest capital investment ($10k - $22k) and the potential for high-profit margins, this business represents a timely and scalable venture.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="opportunity" class="py-20 px-6 bg-slate-50">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Market Analysis & Opportunity</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">The business addresses a core conflict in the modern landscape: the cultural and economic demand for a pristine green lawn versus the environmental and regulatory constraints that make it difficult to achieve. This creates a clear and urgent market need.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Primary Market Catalysts</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="text-emerald-600 text-2xl mr-3">📈</span>
+                                <div>
+                                    <h4 class="font-semibold">Economic Driver: Real Estate Velocity</h4>
+                                    <p class="text-slate-600">A green lawn provides immediate curb appeal, a critical factor in real estate transactions. Research indicates superior landscaping can increase perceived home value by 2-13%. Our service is not an expense; it's a high-ROI investment for sellers.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-emerald-600 text-2xl mr-3">⚖️</span>
+                                <div>
+                                    <h4 class="font-semibold">Regulatory Driver: Water Restrictions</h4>
+                                    <p class="text-slate-600">Municipalities across Massachusetts are increasingly implementing seasonal water use restrictions. This regulatory pressure makes traditional irrigation untenable, creating demand for waterless aesthetic solutions.</p>
+                                </div>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="text-emerald-600 text-2xl mr-3"> HOA</span>
+                                <div>
+                                    <h4 class="font-semibold">Compliance Driver: HOA Mandates</h4>
+                                    <p class="text-slate-600">Homeowners' Associations enforce strict aesthetic standards. Our service provides a compliant solution for homeowners caught between HOA rules and municipal water bans, turning a regulatory conflict into a captive market.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                         <h3 class="text-xl font-bold text-center text-emerald-800 mb-4">Quantify the ROI: Curb Appeal Value</h3>
+                        <p class="text-center text-sm text-slate-600 mb-4">Enter a property value to visualize the potential increase based on enhanced landscaping and curb appeal.</p>
+                        <div class="flex flex-col sm:flex-row gap-2 mb-4">
+                            <input type="number" id="homeValueInput" class="w-full p-2 border rounded-md" placeholder="Enter Home Value (e.g., 850000)" value="850000">
+                            <button id="calculateValueBtn" class="btn-primary px-4 py-2 rounded-md w-full sm:w-auto">Calculate</button>
+                        </div>
+                        <div class="chart-container h-64 md:h-80">
+                            <canvas id="homeValueChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="regulatory" class="py-20 px-6">
+            <div class="container mx-auto max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Regulatory Framework: Massachusetts</h2>
+                    <p class="mt-4 text-lg text-slate-600">A key strategic advantage for this business is the favorable regulatory environment in Massachusetts. The compliance requirements are straightforward and do not present a significant barrier to entry.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold text-emerald-800">Applicator Licensing: Not Required</h3>
+                        <p class="text-slate-600 mt-2">Our analysis of regulations from the Massachusetts Department of Agricultural Resources (MDAR) confirms that a state-issued license is **not required** for the application of purely cosmetic turf colorants. MDAR's licensing framework is specific to pesticide applicators. Since turf paints and pigments make no pesticidal claims (e.g., they do not control insects, weeds, or fungus), they fall outside of this stringent regulatory scope.</p>
+                        <p class="mt-3 text-sm font-semibold text-green-700 bg-green-50 p-3 rounded-md">This "regulatory sweet spot" is a major competitive advantage, significantly lowering startup complexity and cost compared to traditional lawn care services that apply fertilizers and pesticides.</p>
+                    </div>
+                     <div class="border-t pt-6">
+                        <h3 class="text-2xl font-bold text-emerald-800">Standard Business Compliance</h3>
+                        <p class="text-slate-600 mt-2">While no specialized license is needed, the business must adhere to standard professional practices:</p>
+                        <ul class="list-disc list-inside mt-4 space-y-2 text-slate-600">
+                            <li><strong>Business Registration:</strong> The company must be properly registered as a legal entity (e.g., LLC, Sole Proprietorship) with the Commonwealth of Massachusetts.</li>
+                            <li><strong>General Liability Insurance:</strong> Securing comprehensive liability insurance is a non-negotiable operational requirement. This protects the business from claims related to property damage (e.g., overspray) and is a hallmark of a professional, trustworthy service provider.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competition" class="py-20 px-6 bg-slate-50">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Competitive Landscape</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">The market is fragmented and characterized by indirect competition. A specialized, professionally branded service can establish a defensible market-leading position.</p>
+                </div>
+                <div class="max-w-4xl mx-auto">
+                    <div class="flex justify-center space-x-2 md:space-x-4 mb-6">
+                        <button class="product-btn btn-secondary font-semibold py-2 px-4 rounded-lg shadow active" data-type="landscapers">General Landscapers</button>
+                        <button class="product-btn btn-secondary font-semibold py-2 px-4 rounded-lg shadow" data-type="diy">DIY Market</button>
+                        <button class="product-btn btn-secondary font-semibold py-2 px-4 rounded-lg shadow" data-type="alternatives">Alternative Solutions</button>
+                    </div>
+                    <div id="product-display" class="bg-white p-8 rounded-lg shadow-xl transition-all duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plan" class="py-20 px-6">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Strategic & Operational Plan</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">A lean, scalable business model with low startup costs and high profit potential. This blueprint outlines the core components of the operational and financial plan.</p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                     <div class="mb-6 border-b border-gray-200">
+                        <nav class="flex space-x-1" aria-label="Tabs">
+                            <button class="tab-btn active w-1/5 py-3 px-1 text-center font-medium text-sm rounded-t-lg" data-tab="markets">Target Markets</button>
+                            <button class="tab-btn w-1/5 py-3 px-1 text-center font-medium text-sm rounded-t-lg" data-tab="services">Services & Pricing</button>
+                            <button class="tab-btn w-1/5 py-3 px-1 text-center font-medium text-sm rounded-t-lg" data-tab="costs">Startup Costs</button>
+                            <button class="tab-btn w-1/5 py-3 px-1 text-center font-medium text-sm rounded-t-lg" data-tab="risks">Risk Mitigation</button>
+                            <button class="tab-btn w-1/5 py-3 px-1 text-center font-medium text-sm rounded-t-lg" data-tab="growth">Growth Path</button>
+                        </nav>
+                    </div>
+                    <div id="tab-content" class="bg-white p-8 rounded-b-lg rounded-tr-lg shadow-lg">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-emerald-900 text-white py-12 px-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold">Conclusion</h3>
+            <p class="mt-2 max-w-xl mx-auto">This prospectus demonstrates the strong viability and clear path to profitability for a turf coloration business in the Greater Boston market, presenting a timely investment in a high-growth niche.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const competitorData = {
+                landscapers: {
+                    title: 'Threat Analysis: General Landscaping Companies',
+                    description: 'The majority of established landscapers do not currently offer this specialized service. They represent a potential long-term threat due to their existing client base and equipment.',
+                    attributes: [
+                        { label: 'Primary Weakness', value: 'Lack of Specialization' },
+                        { label: 'Strategic Defense', value: 'Build a premium brand synonymous with expertise and superior results in coloration that a generalist cannot replicate.' },
+                        { label: 'Opportunity', value: 'Partner with landscapers, positioning our service as a subcontracted, value-add offering for their clients.' }
+                    ]
+                },
+                diy: {
+                    title: 'Threat Analysis: The DIY Market',
+                    description: 'Colorant products are available at retail stores. The DIYer is competing on price, but cannot replicate professional quality.',
+                    attributes: [
+                        { label: 'Primary Weakness', value: 'Risk of Poor Results' },
+                        { label: 'Strategic Defense', value: 'Market the value of a guaranteed, streak-free finish and the elimination of risk (e.g., staining concrete). Emphasize time savings and professional quality.' },
+                        { label: 'Opportunity', value: 'Our service is the solution for failed or intimidating DIY projects.' }
+                    ]
+                },
+                alternatives: {
+                    title: 'Threat Analysis: Alternative Solutions (Artificial Turf)',
+                    description: 'Artificial turf is a long-term competitor offering a permanent waterless solution, but with significant drawbacks.',
+                    attributes: [
+                        { label: 'Primary Weakness', value: 'Prohibitive Upfront Cost' },
+                        { label: 'Strategic Defense', value: 'Position our service as the affordable, flexible, and natural-grass alternative. Ideal for clients not ready for a five-figure investment.' },
+                        { label: 'Opportunity', value: 'Target homeowners who want to maintain real grass but need a cosmetic solution for dormancy or drought.' }
+                    ]
+                }
+            };
+            
+            const tabData = {
+                markets: {
+                    title: 'Target Market Analysis',
+                    content: `
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-emerald-800">The Real Estate Sector (B2B)</h4>
+                                <p class="text-slate-600"><strong>Profile:</strong> Real estate agents, stagers, and property flippers. <strong>Motivation:</strong> Maximizing sale price and minimizing days on market. They are ROI-driven and understand the value of curb appeal. <strong>Strategy:</strong> Direct outreach, offer referral incentives, and build a portfolio of high-impact before-and-after photos for listings.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">The HOA-Governed Homeowner</h4>
+                                <p class="text-slate-600"><strong>Profile:</strong> Residents in planned communities. <strong>Motivation:</strong> Compliance with strict aesthetic rules and avoiding fines. They are risk-averse and value a solution that keeps them in good standing. <strong>Strategy:</strong> Proactively engage HOA boards to get the service pre-approved, then market directly to residents as the official, compliant solution.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">The Environmentally-Conscious Homeowner</h4>
+                                <p class="text-slate-600"><strong>Profile:</strong> Water-savers and eco-aware residents. <strong>Motivation:</strong> Reducing their environmental footprint and water bill. <strong>Strategy:</strong> Marketing centered on "waterless green" messaging. Emphasize gallons of water saved compared to traditional irrigation.</p>
+                            </div>
+                        </div>
+                    `
+                },
+                services: {
+                    title: 'Service Tiers & Value-Based Pricing',
+                    content: `
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="text-xl font-bold text-emerald-800 mb-3">Service Offerings</h4>
+                                <ul class="space-y-2 text-slate-600">
+                                    <li><strong>Executive Coloration:</strong> Core service for dormant lawns.</li>
+                                    <li><strong>Curb Appeal Package (Premium):</strong> High-margin service for real estate listings, potentially including a second coat for maximum vibrancy.</li>
+                                    <li><strong>Commercial Contracts:</strong> Recurring revenue from property managers.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-emerald-50 p-6 rounded-lg">
+                                <h4 class="text-xl font-bold text-emerald-800 mb-3">Price Estimation Tool</h4>
+                                <p class="text-sm text-slate-600 mb-3">Enter lawn square footage for a preliminary price estimate (professional services average $0.15 - $0.45/sq. ft.).</p>
+                                <input type="number" id="sqft-input" class="w-full p-2 border rounded-md mb-3" placeholder="Enter square footage">
+                                <div id="price-estimate" class="text-center font-bold text-emerald-700 text-lg h-8"></div>
+                            </div>
+                        </div>
+                    `
+                },
+                costs: {
+                    title: 'Startup Capitalization',
+                    content: `
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h4 class="text-xl font-bold text-emerald-800 mb-3">Lean Startup Model</h4>
+                                <p class="text-slate-600 mb-4">The business model requires a low initial capital outlay, estimated between <strong>$10,000 and $22,000</strong>. This low barrier to entry facilitates a rapid path to profitability and positive cash flow.</p>
+                                <p class="text-slate-600">The largest single costs are a reliable vehicle and comprehensive liability insurance.</p>
+                            </div>
+                            <div class="chart-container h-64 md:h-80">
+                                <canvas id="startupCostsChart"></canvas>
+                            </div>
+                        </div>
+                    `
+                },
+                risks: {
+                    title: 'Risk Assessment & Mitigation Strategy',
+                    content: `
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Reputational Risk</h4>
+                                <p class="text-slate-600"><strong>Threat:</strong> Perception of the service as "artificial" or environmentally harmful. <strong>Mitigation:</strong> Proactive marketing focused on "water conservation" and the non-toxic, biodegradable nature of the products. Frame the service as a responsible environmental choice.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Competitive Risk</h4>
+                                <p class="text-slate-600"><strong>Threat:</strong> Low barriers to entry could lead to price wars from new entrants or existing landscapers. <strong>Mitigation:</strong> Establish a premium brand built on specialization, quality, and reliability. Secure recurring revenue through commercial and HOA contracts to build a defensible client base.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Operational Risk</h4>
+                                <p class="text-slate-600"><strong>Threat:</strong> Property damage from overspray. <strong>Mitigation:</strong> Implement and enforce a rigorous, checklist-based Standard Operating Procedure (SOP) for every job, with a focus on meticulous masking and cleanup. Maintain robust liability insurance.</p>
+                            </div>
+                        </div>
+                    `
+                },
+                growth: {
+                    title: 'Strategic Growth Pathways',
+                    content: `
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Phase 2: Geographic Expansion</h4>
+                                <p class="text-slate-600">Replicate the proven business model in adjacent markets (e.g., South Shore, MetroWest) that share the same market drivers of water restrictions and high-value real estate.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Phase 3: Service Line Diversification</h4>
+                                <p class="text-slate-600">Expand service offerings to include related, high-margin services such as athletic field marking for municipalities and schools, or mulch dyeing to offer a complete landscape aesthetic package.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-emerald-800">Phase 4: Franchising</h4>
+                                <p class="text-slate-600">Develop a comprehensive operational playbook to franchise the brand and business system, enabling low-capital national expansion.</p>
+                            </div>
+                        </div>
+                    `
+                }
+            };
+
+            let homeValueChart, startupCostsChart;
+
+            function formatCurrency(value) {
+                return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(value);
+            }
+
+            function createHomeValueChart() {
+                const ctx = document.getElementById('homeValueChart').getContext('2d');
+                const homeValue = parseFloat(document.getElementById('homeValueInput').value) || 0;
+                const lowEndValue = homeValue * 1.02;
+                const highEndValue = homeValue * 1.13;
+
+                if (homeValueChart) {
+                    homeValueChart.destroy();
+                }
+
+                homeValueChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Value Increase (2%)', 'Value Increase (13%)'],
+                        datasets: [{
+                            label: 'New Property Value',
+                            data: [lowEndValue, highEndValue],
+                            backgroundColor: ['#34D399', '#059669'],
+                            borderColor: ['#10B981', '#047857'],
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: true, text: 'Potential Property Value After Service' },
+                            tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        return `Value: ${formatCurrency(context.raw)}`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                ticks: {
+                                    callback: function(value) {
+                                        return formatCurrency(value);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            document.getElementById('calculateValueBtn').addEventListener('click', createHomeValueChart);
+            createHomeValueChart();
+
+            function updateCompetitorDisplay(type) {
+                const data = competitorData[type];
+                const display = document.getElementById('product-display');
+                let attributesHtml = data.attributes.map(attr => `
+                    <div class="text-left border-l-4 border-emerald-500 pl-4">
+                        <p class="text-sm text-slate-500 font-semibold">${attr.label}</p>
+                        <p class="text-slate-700">${attr.value}</p>
+                    </div>
+                `).join('');
+
+                display.innerHTML = `
+                    <h3 class="text-2xl font-bold text-center text-emerald-800 mb-2">${data.title}</h3>
+                    <p class="text-center text-slate-600 mb-6">${data.description}</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 border-t pt-6">
+                        ${attributesHtml}
+                    </div>
+                `;
+            }
+
+            document.querySelectorAll('.product-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelector('.product-btn.active').classList.remove('active');
+                    btn.classList.add('active');
+                    updateCompetitorDisplay(btn.dataset.type);
+                });
+            });
+            updateCompetitorDisplay('landscapers');
+            
+            function updateTabContent(tab) {
+                const data = tabData[tab];
+                document.getElementById('tab-content').innerHTML = data.content;
+
+                if (tab === 'costs') {
+                    createStartupCostsChart();
+                }
+                if (tab === 'services') {
+                    document.getElementById('sqft-input').addEventListener('input', updatePriceEstimate);
+                }
+            }
+
+            function createStartupCostsChart() {
+                const ctx = document.getElementById('startupCostsChart')?.getContext('2d');
+                if (!ctx) return;
+                startupCostsChart = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Vehicle', 'Insurance', 'Marketing', 'Equipment', 'Materials', 'Licensing', 'Contingency'],
+                        datasets: [{
+                            data: [7500, 1500, 1750, 375, 750, 500, 3000],
+                            backgroundColor: ['#064E3B', '#065F46', '#047857', '#059669', '#10B981', '#34D399', '#6EE7B7'],
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'right' },
+                            title: { display: true, text: 'Estimated Startup Cost Breakdown ($15,375 Midpoint)' },
+                             tooltip: {
+                                callbacks: {
+                                    label: function(context) {
+                                        let label = context.label || '';
+                                        if (label) {
+                                            label += ': ';
+                                        }
+                                        if (context.parsed !== null) {
+                                            label += formatCurrency(context.parsed);
+                                        }
+                                        return label;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+            
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelector('.tab-btn.active').classList.remove('active');
+                    btn.classList.add('active');
+                    updateTabContent(btn.dataset.tab);
+                });
+            });
+            updateTabContent('markets');
+            
+            function updatePriceEstimate() {
+                const sqft = parseFloat(document.getElementById('sqft-input').value);
+                const estimateDiv = document.getElementById('price-estimate');
+                if (sqft > 0) {
+                    const lowPrice = sqft * 0.15;
+                    const highPrice = sqft * 0.45;
+                    estimateDiv.textContent = `${formatCurrency(lowPrice)} - ${formatCurrency(highPrice)}`;
+                } else {
+                    estimateDiv.textContent = '';
+                }
+            }
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('main section');
+            
+            window.addEventListener('scroll', () => {
+                let current = 'summary';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (pageYOffset >= sectionTop - 70) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-nav');
+                    const linkHref = link.getAttribute('href').substring(1);
+                    
+                    if (linkHref === 'opportunity' && (current === 'opportunity' || current === 'regulatory' || current === 'competition')) {
+                         link.classList.add('active-nav');
+                    } else if (linkHref === 'plan' && current === 'plan') {
+                        link.classList.add('active-nav');
+                    } else if (linkHref === current) {
+                        link.classList.add('active-nav');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
