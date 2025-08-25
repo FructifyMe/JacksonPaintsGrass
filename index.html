@@ -242,16 +242,39 @@
         <section id="competition" class="py-24 px-6 bg-slate-50 fade-in-section">
             <div class="container mx-auto">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Competitive Landscape</h2>
-                    <p class="mt-6 text-lg text-slate-600 max-w-3xl mx-auto">The market is fragmented and characterized by indirect competition. A specialized, professionally branded service can establish a defensible market-leading position.</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-emerald-900">Competitive Landscape & Product Sourcing</h2>
+                    <p class="mt-6 text-lg text-slate-600 max-w-3xl mx-auto">A successful strategy requires a deep understanding of the products available and the existing market players. This analysis details the major brands, the supply chain for sourcing materials, and the competitive dynamics in the Greater Boston area.</p>
                 </div>
-                <div class="max-w-4xl mx-auto">
-                    <div class="flex flex-col sm:flex-row justify-center gap-2 md:gap-4 mb-8">
-                        <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm active" data-type="landscapers">General Landscapers</button>
-                        <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm" data-type="diy">DIY Market</button>
-                        <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm" data-type="alternatives">Alternative Solutions</button>
+                <div class="max-w-5xl mx-auto space-y-12">
+                    <div class="card p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Major Product Brands and Technologies</h3>
+                        <p class="text-slate-600 mb-6">The professional market is dominated by a few key manufacturers who offer a range of products from long-lasting paints to short-term pigments. A professional service must be knowledgeable about these options to tailor solutions to specific client needs.</p>
+                        <ul class="space-y-4">
+                            <li><strong>Endurant (Geoponics):</strong> Widely regarded as a premium brand, Endurant offers a variety of colorants known for their natural appearance and durability. Their product line includes both paints for dormant turf and pigments for enhancing green on active turf. They are a common choice for high-end residential clients and golf courses.</li>
+                            <li><strong>Green Lawnger (BASF):</strong> A legacy product from a major chemical company, Green Lawnger is a well-established turf paint. It's known for its long-lasting color (up to 14 weeks) and is a reliable, professional-grade option for both dormant lawns and sports turf.</li>
+                            <li><strong>EnviroColor:</strong> This brand focuses on environmentally-friendly formulations for both turf and mulch. Their "4EverGreen" product is a popular choice and is marketed as non-toxic and safe for pets and children, aligning well with an eco-conscious branding strategy.</li>
+                        </ul>
                     </div>
-                    <div id="product-display" class="card p-8 md:p-10 transition-all duration-500 min-h-[300px]">
+                    <div class="card p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Material Sourcing and Distribution</h3>
+                        <p class="text-slate-600 mb-6">Professional-grade colorants are not typically sold in big-box retail stores. They are acquired through a B2B supply chain of specialty distributors who cater to the professional landscaping, sports turf, and golf course industries.</p>
+                        <ul class="list-disc list-inside space-y-2 text-slate-600">
+                            <li><strong>National Distributors:</strong> Large suppliers like **SiteOne Landscape Supply** and **Target Specialty Products** have extensive catalogs and distribution networks. Establishing a commercial account with these companies provides access to a wide range of products, including colorants, equipment, and other landscaping materials.</li>
+                            <li><strong>Regional Distributors:</strong> Companies like **Advanced Turf Solutions** and **Turf Trade** serve the Northeast and offer specialized expertise and local support. Building relationships with regional suppliers can provide better customer service and access to region-specific product knowledge.</li>
+                            <li><strong>Direct from Manufacturer:</strong> Some manufacturers, like Geoponics (Endurant), offer programs for professionals to become certified applicators or distributors, which can provide marketing support and preferential pricing.</li>
+                        </ul>
+                    </div>
+                    <div class="card p-8 md:p-10">
+                        <h3 class="text-2xl font-bold text-emerald-800 mb-4">Enhanced Competitor Analysis</h3>
+                        <p class="text-slate-600 mb-6">While the market is fragmented, a clear strategy is needed to outperform the different forms of competition.</p>
+                        <div id="product-display" class="transition-all duration-500">
+                             <div class="flex flex-col sm:flex-row justify-center gap-2 md:gap-4 mb-8 border-b pb-4">
+                                <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm active" data-type="landscapers">General Landscapers</button>
+                                <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm" data-type="diy">DIY Market</button>
+                                <button class="product-btn btn-secondary font-semibold py-3 px-6 rounded-lg shadow-sm" data-type="alternatives">Alternative Solutions</button>
+                            </div>
+                            <div id="competitor-content"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -491,7 +514,7 @@
 
             function updateCompetitorDisplay(type) {
                 const data = competitorData[type];
-                const display = document.getElementById('product-display');
+                const display = document.getElementById('competitor-content');
                 let attributesHtml = data.attributes.map(attr => `
                     <div class="text-left border-l-4 border-emerald-500 pl-4">
                         <p class="text-sm text-slate-500 font-semibold">${attr.label}</p>
